@@ -1,0 +1,86 @@
+.header{
+    &__banner{
+        background-image:url("/gigeo/assets/img/image-banner.png");
+        height: 110px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include respond-to($min-laptop){
+            height: 250px;
+        }
+    }
+
+    &__profile{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        height:100px;
+        padding: 0 40px;
+    }
+    &__info{
+        display: flex;
+        flex-grow: 5;
+    }
+
+    &__avatar{
+        background-image:url("/gigeo/assets/img/profile-image.png");
+        background-size: cover;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 15px;
+
+    }
+
+    &__name{
+        font-weight: $font-size-xx-large;
+
+    }
+
+    &followers{
+        color: $gray;
+        font-size: $font-size-medium;
+    }
+
+    &__actions{
+        display:none;
+
+        @include respond-to($min-laptop){
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+}
+
+.main{
+    &__title{
+        font-size: $font-size-xx-large;
+        justify-content: center;
+        text-align:center;
+    }
+    &__preview{
+        height: 200px;
+        background-size: cover;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__name{
+        font-size: $font-size-x-large;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__views{
+        color: $gray;
+    }
+}

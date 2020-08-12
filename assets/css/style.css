@@ -9916,5 +9916,102 @@ h3 {
     border-color: #dee2e6;
   }
 }
+* {
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border: 0;
+  color: #fff;
+  font-size: medium;
+  margin-left: 10px;
+  padding: 15px;
+}
+.button--red {
+  background-color: #ff5658;
+}
+.button--blue {
+  background-color: #79dee7;
+}
+
+.header__banner {
+  background-image: url("/gigeo/assets/img/image-banner.png");
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .header__banner {
+    height: 250px;
+  }
+}
+.header__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  padding: 0 40px;
+}
+.header__info {
+  display: flex;
+  flex-grow: 5;
+}
+.header__avatar {
+  background-image: url("/gigeo/assets/img/profile-image.png");
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.header__details {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+.header__name {
+  font-weight: 30px;
+}
+.headerfollowers {
+  color: #888;
+  font-size: 16px;
+}
+.header__actions {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.main__title {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.main__preview {
+  height: 200px;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.main__name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main__views {
+  color: #888;
+}
 
 /*# sourceMappingURL=style.css.map */
